@@ -13,12 +13,10 @@ body
     font-family: 'Open Sans', sans-serif;
     color: #7F7F7F;
     font-size: 13px;
-
     background-image: url("../images/sailboat-bg.jpg");
-    opacity: 0.88;
+    opacity: 0.8;
     background-attachment: fixed;
-    /*background-size: auto 100%;*/
-    background-size: cover;
+    background-size: auto 100%;
     background-repeat: no-repeat;
 }
 
@@ -107,13 +105,10 @@ hr
     color: #F4D313;
 }
 
-/*.fa-mobile
+.fa-mobile
 {
     color: #f39c12;
-}*/
-
-
-
+}
 
 .fa-envelope
 {
@@ -761,32 +756,3 @@ hr
     font-size: 20px;
     margin-right:8px;
 }
-
-
-/* custom */
-.blur-text
-{
-    color: transparent;
-    text-shadow: 0 0 3px #34495E;
-}
-
-.modal-backdrop
-{
-    opacity:0.8 !important;
-}
-
-body.modal-open .modal {
-    display: flex !important;
-    height: 100%;
-} 
-
-body.modal-open .modal .modal-dialog {
-    margin: auto;
-}
-
-a {
-  color: inherit; /* blue colors for links too */
-  text-decoration: inherit; /* no underline */
-}
-
-
