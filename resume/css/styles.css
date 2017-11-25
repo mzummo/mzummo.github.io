@@ -89,7 +89,7 @@ body {
 	background: #b9babe url("../img/sailboat-bg.jpg");
 	background-attachment: fixed;
 	/*background-position: 100% 100%;*/
-	background-size: 100% 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 } 
 .wrapper {
@@ -973,14 +973,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     body {
 		background-image: url("../img/sailboat-bg.jpg");
 
-		/*background-attachment:initial;*/
-		/*position:absolute;*/
-		/*bottom:0;*/
-		/*left:0;*/
-		/*width:100%;*/
-		background-repeat:no-repeat;
-		background-position:center;
-		background-size:scroll;
+    /*background-image: url("../images/sailboat-bg.jpg");*/
+    /*opacity: 0.8;*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 
 	} 

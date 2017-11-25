@@ -10,6 +10,8 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Font Awesome CSS -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom styles CSS -->
     <link href="assets/css/custom-style.css" rel="stylesheet" />
     <!-- Animate css -->
@@ -21,6 +23,10 @@
       <script src="bootstrap/js/html5shiv.min.js"></script>
       <script src="bootstrap/js/respond.min.js"></script>
     <![endif]-->
+
+    
+
+
 </head>
 <body>
     <!-- Start Wrapper -->
@@ -55,29 +61,36 @@
                     <div class="contact">
                         <h2 class="sub-title"><i class="fa fa-slack"></i>CONTACT</h2>
                         <ul class="list-unstyled contact-list">
-                            <li><i class="fa fa-phone"></i><span class="pull-right blur-text">+1 (561) 880-5889</span><i class="fa fa-lock"></i></li>
-                            <li><i class="fa fa-mobile"></i><span class="pull-right">+1 (000) 900-00-00</span></li>
-                            <li><a href="mailto:mzummo@gmail.com"><i class="fa fa-envelope"></i><span class="pull-right">mzummo@gmail.com</span></a></li>
-                            <li><a id="a-send-message" href="#"><i class="fa fa-globe"></i><span class="pull-right">Send Instant Message</span></a></li>
+                            <!-- <li><i class="material-icons md-10">phone</i><span class="pull-right"<span class="pull-right blur-text">+1 (561) 880-5889</span></li> -->
+                            
+                            <li><i class="material-icons">phone_android</i><span class="pull-right">+1 (000) 900-00-00</span></li>
+                            <li><i class="material-icons"><i class="material-icons">place</i></i><span class="pull-right"<span class="pull-right blur-text">Delray Beach, FL</span></li>
+                            
+                            <li><a href="mailto:mzummo@gmail.com"><i class="material-icons">email</i><span class="pull-right">mzummo@gmail.com</span></a></li>
+                            <!-- <li><a id="a-send-message" href="#"><i class="material-icons">message</i><span class="pull-right">Send Instant Message</span></a></li> -->
+                            <li><a id="a-send-message" href="#"><i class="material-icons">message</i><button type="button" class="pull-right btn btn-xs btn-primary btn-purple">Send Instant Messaage</button></a></li>
+                            
+
                             <!-- <li><i class="fa fa-globe"></i><span class="pull-right"><a href="javascript:void(0)">www.jquery2DotNet.com</a></span></li> -->
                         </ul>
                     </div>
                     <!-- End Contact -->
 
-                           <!-- Start Follow Me -->
-                            <h2 class="sub-title"><i class="fa fa-angle-double-right"></i>SOCIAL PROFILES</h2>
-                            <div class="follow">
-                                <ul class="list-inline">
-                                    <li><a href="javascript:void(0)"><i data-toggle="tooltip" title="Twitter" class="fa fa-twitter-square fa-2x"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i data-toggle="tooltip" title="Facebook" class="fa fa-facebook-square fa-2x"></i></a></li>
-                                    <!-- <li><a href="javascript:void(0)"><i data-toggle="tooltip" title="Google plus" class="fa fa-google-plus-square fa-2x"></i></a></li> -->
-                                    <li><a href="javascript:void(0)"><i data-toggle="tooltip" title="Linkedin" class="fa fa-linkedin-square fa-2x"></i></a></li>
-                                    <!-- <li><a href="javascript:void(0)"><i data-toggle="tooltip" title="Pinterest" class="fa fa-pinterest-square fa-2x"></i></a></li> -->
-                                    <li><a href="javascript:void(0)"><i data-toggle="tooltip" title="Instagram" class="fa fa-instagram fa-2x"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i data-toggle="tooltip" title="Youtube" class="fa fa-youtube fa-2x"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- End Follow Me -->
+                   <!-- Start Follow Me -->
+                    <h2 class="sub-title"><i class="fa fa-angle-double-right"></i>SOCIAL PROFILES</h2>
+                    <div class="follow pull-right">
+                        <ul class="list-inline">
+                            <li><a href=""><img src="assets/icons/facebook.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/icons/twitter.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/icons/linkedin.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/icons/google-plus.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/icons/youtube.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/icons/patreon.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/icons/rss.png" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- End Follow Me -->
 
 
 
@@ -88,13 +101,15 @@
             <div class="row">
                 <div class="col-md-6">
                     <!-- Start Work Experience -->
-                    <h2 class="sub-title"><i class="fa fa-slack"></i>WORK EXPERIENCE</h2>
+                    <div><h2 class="sub-title"><i class="fa fa-slack"></i>WORK EXPERIENCE</h2><span></span><span id="expand-section-text" style="float:right;"><u>click section to expand</u></span></div>
                     <ul class="timeline">
                         <li>
                             <div class="timeline-badge mid-night">2016</div>
+                            
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4 class="timeline-title">Software Engineer</h4>
+                                    <span class="badge badge-secondary mid-night">2016 - Present</span>
                                     <p><small class="text-muted">MyTrueserve</small></p>
                                 </div>
                                 <div class="timeline-body">
@@ -105,43 +120,98 @@
                         <li>
                             <div class="timeline-badge mid-night">2014</div>
                             <div class="timeline-panel">
+                                <i class="toggle-slidedown pull-right fa fa-angle-down fa-3x"></i>
                                 <div class="timeline-heading">
                                     <h4 class="timeline-title">Senior Software Engineer</h4>
+                                    <span class="badge badge-secondary mid-night">2014 - 2016</span>
                                     <p><small class="text-muted">Lexis Nexis / Insight Global</small></p>
                                 </div>
                                 <div class="timeline-body">
                                     <p> Senior Software Engineer for a well known and established global big-data and technology firm. I worked on several well known key products for primarily two divisions (RISK &amp; HPCC Systems). 
-                                    <br><br>    
-                                    For the RISK Division I developed and debugged Front-End (JS/CSS/HTML) – (XML/XSLT). Working in tandem with QA, Design &amp; fellow Developers to find and resolve issues and program planned features. I also had a hand in several Zend Framework Products programming new features and analytics; facilitated development with 3rd party companies and internal/external APIs (mostly REST and SOAP) additionally working with the DB, DevOps &amp; Business teams. 
-                                    <br><br>
-                                    For the HPCC Systems division I worked on the team that developed a Charting/Visualization/Data Analytics framework used in internal and external products; also, helped implement the framework into new and existing Lexis Nexis &amp; HPCC Cluster Data Analytics Applications (Java/Tomcat, LAMP &amp; .NET).</p>
+                                        <div class="section-a">
+                                        <br>
+                                        For the RISK Division I developed and debugged Front-End (JS/CSS/HTML) – (XML/XSLT). Working in tandem with QA, Design &amp; fellow Developers to find and resolve issues and program planned features. I also had a hand in several Zend Framework Products programming new features and analytics; facilitated development with 3rd party companies and internal/external APIs (mostly REST and SOAP) additionally working with the DB, DevOps &amp; Business teams. 
+                                        <br><br>
+                                        For the HPCC Systems division I worked on the team that developed a Charting/Visualization/Data Analytics framework used in internal and external products; also, helped implement the framework into new and existing Lexis Nexis &amp; HPCC Cluster Data Analytics Applications (Java/Tomcat, LAMP &amp; .NET).
+                                        </div>
+                                    </p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="timeline-badge mid-night">2011</div>
                             <div class="timeline-panel">
+                                <i class="toggle-slidedown pull-right fa fa-angle-down fa-3x"></i>
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title">Senior Software Engineer &amp; DevOPS</h4>
+                                    <h4 class="timeline-title">Senior Software Engineer &amp; DevOps</h4>
+                                    <span class="badge badge-secondary mid-night">2011 - 2017</span>
                                     <p><small class="text-muted">JJL Process</small></p>
                                 </div>
                                 <div class="timeline-body">
                                     <p>
                                         Senior LAMP Engineer &amp; Software Developer for litigation support company, with 120+ employees and 15 offices nationwide, responsible for all aspects of designing, debugging, maintaining web-application and mobile software for core business. Converting business ideas/technical requirements into code with scale and security in-mind.
                                     <br><br>
+                                    <div class="section-a">
                                         JJLProcess’s core architecture and systems are extensively LAMP based. I developed and implemented their High Availability and Disaster Recovery System (Filesystem/SQL replication and DNS failover). During my time there I have re-written many of the key systems including a DB connection class to handle load balancing and failover. I have audited the system to improve performance by Indexing MySQL, rewriting queries, improving database structure and moving to SSD storage.
+                                    </div>
                                     </p>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="timeline-badge mid-night">2012</div>
+                            <div class="timeline-badge mid-night">2008</div>
                             <div class="timeline-panel">
+                                <i class="toggle-slidedown pull-right fa fa-angle-down fa-3x"></i>
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title">Other Job</h4>
+                                    <h4 class="timeline-title">Software Engineer</h4>
+                                    <span class="badge badge-secondary mid-night">2008 - 2011</span>
+                                    <p><small class="text-muted">Independent Contractor</small></p>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                    <p>
+                                        Developed various web and software solutions and provided administration of computer systems for RSS Labs, Linkscape, and US Coverage.
+                                        At Linkscape I had the opportunity to co-develop technologies and a platform for tracking, monitoring, and supporting their Satellite Modem (VSAT) Internet Service for Ultra High-End Luxury Yachts ($20M+). These systems were developed extensively in Python. Both the modem and backend systems were powered by Linux.
+                                    </p>
+                                    <div class="section-a">
+                                    <p>    
+                                        At SMDNOW:
+                                        <ul>
+                                        <li>Developing marine life tagging and tracking application for customer.</li>
+                                        <li>Helped develop complex SQL queries for customer applications.</li>
+                                        <li>Provided Linux/MYSQL/PHP support.</li>
+                                        </ul>
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge mid-night">2006</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Admin &amp; DevOps</h4>
+                                    <span class="badge badge-secondary mid-night">2006 - 2008</span>
+                                    <p><small class="text-muted">Entertainment Benefits Group</small></p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Windows &amp; Linux System Administrator (DevOps) for ecommerce travel company with 50+ employees and $100M revenue.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge mid-night">2005</div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Production Specialist</h4>
+                                    <span class="badge badge-secondary mid-night">2005 - 2006</span>
+                                    <p><small class="text-muted">eSchool Solutions</small></p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Build servers, create documentation, and provided support for software firm in education market with custom solution for school districts nation-wide.
+                                    </p>
                                 </div>
                             </div>
                         </li>
@@ -152,21 +222,21 @@
                     <h2 class="sub-title"><i class="fa fa-slack"></i>EDUCATION</h2>
                     <ul class="timeline">
                         <li>
-                            <!--<div class="timeline-badge mid-night">2012</div>-->
+                            <div class="timeline-badge mid-night">2004</div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title">University</h4>
+                                    <h4 class="timeline-title">Computer Engineering</h4>
                                     <span class="badge badge-secondary mid-night">2004 - 2007</span>
                                     <p><small class="text-muted">University of Central Florida</small></p>
                                 </div>
-                                <div class="timeline-body">
+                                <!-- <div class="timeline-body">
                                     <p>Attended 3 years.</p>
-                                </div>
+                                </div> -->
                             </div>
                         </li>
                         <li>
-                            <!--<div class="timeline-badge mid-night">2004</div>-->
-                            <span class="badge badge-secondary mid-night">2000 - 2004</span>
+                            <div class="timeline-badge mid-night">2000</div>
+                            <!-- <span class="badge badge-secondary mid-night">2000 - 2004</span> -->
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4 class="timeline-title">High School</h4>
@@ -188,9 +258,10 @@
                         <div class="col-md-12">
 
                             <h2 class="sub-title"><i class="fa fa-bars"></i>SKILLS</h2>
+                            <br>
                             <div>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-green-sea" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-green-sea" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                         <span>HTML5 &amp; CSS3</span>
                                     </div>
                                 </div>
@@ -201,7 +272,7 @@
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-green-sea" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                        <span>Javascript (Native, jQuery, NodeJS)</span>
+                                        <span>Javascript (Native, jQuery, NodeJS, etc...)</span>
                                     </div>
                                 </div>
                                 <div class="progress">
@@ -212,6 +283,16 @@
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-green-sea" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                         <span>SQL</span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-green-sea" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                        <span>Java</span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-green-sea" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                        <span>C++</span>
                                     </div>
                                 </div>
                             </div>
@@ -726,7 +807,7 @@
                             <div class="service-icon">
                                 <i class="fa fa-file-photo-o"></i>
                             </div>
-                            <div class="service-description">$65.00</div>
+                            <div class="service-description">$65</div>
                         </div>
                         <div class="col-sm-4 col-md-4 text-center">
                             <h3>Mobile App Development</h3>
@@ -754,14 +835,14 @@
                             <div class="service-icon">
                                 <i class="fa fa-line-chart"></i>
                             </div>
-                            <div class="service-description">$$$ </div>
+                            <div class="service-description">Quote</div>
                         </div>
                         <div class="col-sm-4 col-md-4 text-center">
                             <h3>Other</h3>
                             <div class="service-icon">
-                                <i class="fa fa-line-chart">$$$</i>
+                                <i class="fa fa-line-chart"></i>
                             </div>
-                            <div class="service-description">Rate: </div>
+                            <div class="service-description">Quote</div>
                         </div>
                     </div>
                 </div>
@@ -774,10 +855,12 @@
                     <h2 class="sub-title"><i class="fa fa-slack"></i>Quick contact</h2>
                     <div class="row">
                         <div class="col-sm-4 col-md-4">
-                            <div class="quick-contact"><a href="mailto:mzummo@gmail.com"><i class="fa fa-envelope-o fa-3x"></i>mzummo@gmail.com</a></div>
+                            <div class="quick-contact"><a href="mailto:mzummo@gmail.com"><i class="fa fa-envelope-o"></i>mzummo@gmail.com</a></div>
                         </div>
                         <div class="col-sm-4 col-md-4">
-                            <div class="quick-contact"><i class="fa fa-mobile"></i>+1 (561) 000-0000</div>
+                            <div class="quick-contact"><i class="fa fa-mobile fa-2x"></i>+1 (561) 000-0000</div>
+                            <!-- <div class="quick-contact"><i class="material-icons">phone_android</i>+1 (561) 000-0000</div> -->
+                            
                         </div>
                         <div class="col-sm-4 col-md-4">
                             <div class="quick-contact"><i class="fa fa-skype"></i>Send Instant Message</div>
@@ -809,13 +892,13 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Send Instant message</h4>
+            <h4 class="modal-title" id="myModalLabel">Send Instant Message</h4>
           </div>
           <div class="modal-body">
-            Message:<br>
+            <!--Message:<br>-->
             
             <form action="?" method="POST">
-                <textarea style="width:100%"></textarea><br><br>
+                <textarea placeholder="Message" style="width:100%"></textarea><br><br>
                 <div class="g-recaptcha" data-sitekey="your_site_key"></div>
                 <!--<input type="submit" value="Submit">-->
             </form>
@@ -863,7 +946,16 @@
 
         $("#a-send-message").click(function() {
             $('#myModal').modal('show');
-        })
+        });
+
+        $(".timeline-panel").click(function() {
+            $(this).find(".section-a").slideToggle("slow");
+            $(this).find(".toggle-slidedown").fadeToggle("slow",function() {
+                $(this).find(".toggle-slidedown").toggleClass("fa-angle-down fa-angle-left");
+            });       
+        });
+
+
 </script>
 </body>
 </html>
