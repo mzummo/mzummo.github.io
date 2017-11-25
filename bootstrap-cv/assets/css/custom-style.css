@@ -16,7 +16,7 @@ body
     background-image: url("../images/sailboat-bg.jpg");
     opacity: 0.8;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
 }
 
